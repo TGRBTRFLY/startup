@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
     android:orientation = "vertical">
@@ -9,6 +10,7 @@
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:hint = "Title"
+        android:text = "1 Peter 4"
         android:textSize = "24sp"
         android:textStyle = "bold" />
 
@@ -19,10 +21,26 @@
         android:ems = "10"
         android:gravity = "start|top"
         android:hint = "Add Note"
-        android:inputType = "textMultiLine" />
+        android:inputType = "textMultiLine"
+        android:text = "8 And above all things have fervent charity among yourselves: for charity shall cover the multitude of sins." />
 
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "match_parent"
-        android:orientation = "horizontal"></LinearLayout>
+        android:orientation = "horizontal">
+
+        <ImageButton
+            android:id = "@+id/deleteIB"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            app:srcCompat = "@drawable/baseline_delete_black_18dp" />
+
+        <ImageButton
+            android:id = "@+id/editIB"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            app:srcCompat = "@drawable/baseline_edit_black_18dp" />
+    </LinearLayout>
 </LinearLayout>
