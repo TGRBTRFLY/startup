@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // Add dummy data
         listNotes.add(Note(1, "Meet Professor", "Note Description"))
-        listNotes.add(Note(2, "Meet Friend", "Note Description"))
+        listNotes.add(Note(2, "Moroni 7", "47 But charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him."))
         listNotes.add(Note(3, "Meet Doctor", "Note Description"))
 
         var myNotesAdapter = MyNotesAdapter(listNotes)

@@ -20,6 +20,7 @@
             android:layout_height = "wrap_content"
             android:hint = "Title"
             android:text = "1 Peter 4"
+            android:textColor = "@color/colorPrimaryDark"
             android:textSize = "24sp"
             android:textStyle = "bold" />
 
@@ -36,20 +37,28 @@
         <LinearLayout
             android:layout_width = "match_parent"
             android:layout_height = "wrap_content"
+            android:layout_weight = "50"
             android:orientation = "horizontal">
+
+            <Space
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "50" />
 
             <ImageButton
                 android:id = "@+id/editIB"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
+                android:layout_width = "30dp"
+                android:layout_height = "30dp"
+                android:layout_margin = "5dp"
                 android:layout_weight = "1"
                 android:background = "#fff"
                 app:srcCompat = "@drawable/baseline_edit_black_18dp" />
 
             <ImageButton
                 android:id = "@+id/deleteIB"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
+                android:layout_width = "30dp"
+                android:layout_height = "30dp"
+                android:layout_margin = "5dp"
                 android:layout_weight = "1"
                 android:background = "#fff"
                 app:srcCompat = "@drawable/baseline_delete_black_18dp" />
