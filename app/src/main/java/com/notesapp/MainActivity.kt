@@ -15,7 +15,6 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ticket.view.*
 
-
 class MainActivity : AppCompatActivity() {
 
     var listNotes = ArrayList<Note>()
@@ -77,8 +76,8 @@ class MainActivity : AppCompatActivity() {
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
             var myView = layoutInflater.inflate(R.layout.ticket, null)
             var myNote = listNotesAdapter[position]
-            myView.titleTV.text = myNote.noteName
-            myView.desTV.text = myNote.noteDes
+            myView.tvTitle.text = myNote.noteName
+            myView.tvDes.text = myNote.noteDes
 
             return myView
         }

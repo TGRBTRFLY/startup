@@ -15,7 +15,9 @@
         android:orientation = "vertical">
 
         <TextView
-            android:id = "@+id/titleTV"
+            android:id = "@+id/tvTitle"
+            android:paddingLeft = "5pt"
+            android:paddingRight = "5pt"
             android:layout_width = "match_parent"
             android:layout_height = "wrap_content"
             android:hint = "Title"
@@ -25,10 +27,11 @@
             android:textStyle = "bold" />
 
         <TextView
-            android:id = "@+id/desTV"
+            android:id = "@+id/tvDes"
+            android:paddingLeft = "5pt"
+            android:paddingRight = "5pt"
             android:layout_width = "match_parent"
             android:layout_height = "wrap_content"
-            android:ems = "10"
             android:gravity = "start|top"
             android:hint = "Add Note"
             android:inputType = "textMultiLine"
@@ -46,7 +49,7 @@
                 android:layout_weight = "50" />
 
             <ImageButton
-                android:id = "@+id/editIB"
+                android:id = "@+id/ibEdit"
                 android:layout_width = "30dp"
                 android:layout_height = "30dp"
                 android:layout_margin = "5dp"
@@ -55,7 +58,7 @@
                 app:srcCompat = "@drawable/baseline_edit_black_18dp" />
 
             <ImageButton
-                android:id = "@+id/deleteIB"
+                android:id = "@+id/ibDelete"
                 android:layout_width = "30dp"
                 android:layout_height = "30dp"
                 android:layout_margin = "5dp"
