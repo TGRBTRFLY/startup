@@ -1,13 +1,16 @@
 package com.notesapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ticket.view.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,9 +34,23 @@ class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+
+        if (item != null) {
+            when (item.itemId) {
+                R.id.miNewNote -> {
+                    // Go to 'Add New Note' screen
+                    var intent = Intent(this, AddNotes::class.java)
+                    startActivity(intent)
+                }
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
     inner class MyNotesAdapter : BaseAdapter {
         var listNotesAdapter = ArrayList<Note>()
-
         constructor(listNotesAdapter: ArrayList<Note>) : super() {
             this.listNotesAdapter = listNotesAdapter
         }
@@ -58,7 +75,8 @@ class MainActivity : AppCompatActivity() {
         override fun getCount(): Int {
             return listNotesAdapter.size
         }
-
     }
 }
+
+
 
